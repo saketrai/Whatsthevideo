@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Videos>
+
+    <Video>
+        <VideoID>1</VideoID>
+        <VideoURL>WDWc19ZKEj0&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//2
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>HEAT</Option1>
+
+    </Video>
+
+    <Video>
+        <VideoID>2</VideoID>
+        <VideoURL>XCz09UFHY-k&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//4
+        <VideoDuration>5</VideoDuration>
+         <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>ROCKY</Option1>
+
+    </Video>
+    <Video>
+        <VideoID>3</VideoID>
+        <VideoURL>I2wK9wT8LYY&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//5
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>SALT</Option1>
+
+    </Video>
+    <Video>
+        <VideoID>4</VideoID>
+        <VideoURL>L5iFp8wQsNQ&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//6
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>SKYFALL</Option1>
+
+    </Video>
+    <Video>
+        <VideoID>5</VideoID>
+        <VideoURL>uADwbYIa35Q&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//8
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>TANGLED</Option1>
+
+    </Video>
+    
+    <Video>
+        <VideoID>6</VideoID>
+        <VideoURL>8FgEEMd91AY&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//7
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>TRANSFORMERS</Option1>
+
+    </Video>
+
+    <Video>
+        <VideoID>7</VideoID>
+        <VideoURL>xgXM8Y6bdNQ&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//8
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>TWISTER</Option1>
+
+    </Video>
+    <Video>
+        <VideoID>8</VideoID>
+        <VideoURL>0x1RWW4x1CI&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//8
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>bolt</Option1>
+    </Video>
+    
+    <Video>
+        <VideoID>9</VideoID>
+        <VideoURL>zzlLBPyJWsU&amp;list=FLEYfH4kbq85W_CiOTuSjf8w&amp;feature=mh_lolz</VideoURL>//8
+        <VideoDuration>5</VideoDuration>
+        <VideoTitle>WHAT'S THE MOVIE ?</VideoTitle>
+        <Option1>ANACONDA</Option1>
+    </Video>
+
+    
+</Videos>

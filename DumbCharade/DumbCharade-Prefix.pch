@@ -1,0 +1,24 @@
+//
+// Prefix header for all source files of the 'DumbCharade' target in the 'DumbCharade' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "DCConstants.h"
+
+#define _DEBUG
+
+#ifdef _DEBUG
+# define DLog(...) NSLog(__VA_ARGS__)
+#else
+# define DLog(...) /*..*/
+#endif
+
+#endif
