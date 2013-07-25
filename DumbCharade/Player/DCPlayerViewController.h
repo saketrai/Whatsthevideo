@@ -20,7 +20,7 @@
     NSInteger           mSelectedQuestionIndex;
     NSMutableArray      *m_pSelectedQuesArray;
 
-    LBYouTubePlayerController   *m_pVideoPlayercontroller;
+    LBYouTubePlayerViewController   *m_pVideoPlayercontroller;
     IBOutlet UIButton           *m_pPlayNextBtn;
     NSInteger                   mCorrectAnswers;
 
@@ -29,7 +29,7 @@
 @property(strong, nonatomic)IBOutlet UILabel    *m_pTitle;
 @property(strong, nonatomic)IBOutlet UILabel    *m_pScoreLabel;
 @property(strong, nonatomic)NSMutableArray      *m_pSelectedQuesArray;
-@property (nonatomic, strong) LBYouTubePlayerController *m_pVideoPlayercontroller;
+@property (nonatomic, strong) LBYouTubePlayerViewController *m_pVideoPlayercontroller;
 @property(strong, nonatomic)IBOutlet UIButton           *m_pPlayNextBtn;
 @property(strong,nonatomic) NSString* pressedButtonText;
 @property(nonatomic) int pressedButtontag;

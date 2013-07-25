@@ -71,6 +71,10 @@
 		09D9A43016F96A060012EBE4 /* white_glass_to_activate.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D9A42F16F96A060012EBE4 /* white_glass_to_activate.png */; };
 		09D9A43216F96BE00012EBE4 /* Video_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D9A43116F96BE00012EBE4 /* Video_frame.png */; };
 		09E2048117042DAD00F0B30A /* Chiltern_Silver_Plated_Trophy_Cup_AGP7180_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09E2048017042DAD00F0B30A /* Chiltern_Silver_Plated_Trophy_Cup_AGP7180_1.jpg */; };
+		09E53ED417A1071500B458B8 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E53ED117A1071500B458B8 /* LBYouTubeExtractor.m */; };
+		09E53ED517A1071500B458B8 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E53ED117A1071500B458B8 /* LBYouTubeExtractor.m */; };
+		09E53ED617A1071500B458B8 /* LBYouTubePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E53ED317A1071500B458B8 /* LBYouTubePlayerViewController.m */; };
+		09E53ED717A1071500B458B8 /* LBYouTubePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E53ED317A1071500B458B8 /* LBYouTubePlayerViewController.m */; };
 		35B74A0516F962D9006435F0 /* Play button.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B74A0416F962D9006435F0 /* Play button.png */; };
 		35B74A2B16FA6713006435F0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B74A2916FA6713006435F0 /* Icon-72.png */; };
 		35CFF6A916FA6828003B3018 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 35CFF6A816FA6828003B3018 /* Icon.png */; };
@@ -129,11 +133,7 @@
 		AFC0EEC216B6E63800815599 /* PlayBtn-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC0EEBF16B6E63800815599 /* PlayBtn-568h@2x.png */; };
 		AFC0EEC316B6E63800815599 /* PlayBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC0EEC016B6E63800815599 /* PlayBtn.png */; };
 		AFC0EEC416B6E63800815599 /* PlayBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC0EEC116B6E63800815599 /* PlayBtn@2x.png */; };
-		AFC0EECF16B7015A00815599 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0EECC16B7015A00815599 /* LBYouTubeExtractor.m */; };
-		AFC0EED016B7015A00815599 /* LBYouTubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0EECE16B7015A00815599 /* LBYouTubePlayerController.m */; };
 		AFC0EED216B7017000815599 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0EED116B7017000815599 /* MediaPlayer.framework */; };
-		AFC0EED316B7037900815599 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0EECC16B7015A00815599 /* LBYouTubeExtractor.m */; };
-		AFC0EED416B7037B00815599 /* LBYouTubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0EECE16B7015A00815599 /* LBYouTubePlayerController.m */; };
 		AFD72EDC16C73272004C6863 /* DCScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD72EDA16C73272004C6863 /* DCScoreViewController.m */; };
 		AFD72EDD16C73272004C6863 /* DCScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD72EDB16C73272004C6863 /* DCScoreViewController.xib */; };
 /* End PBXBuildFile section */
@@ -213,6 +213,11 @@
 		09D9A42F16F96A060012EBE4 /* white_glass_to_activate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_glass_to_activate.png; sourceTree = "<group>"; };
 		09D9A43116F96BE00012EBE4 /* Video_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Video_frame.png; path = ../Video_frame.png; sourceTree = "<group>"; };
 		09E2048017042DAD00F0B30A /* Chiltern_Silver_Plated_Trophy_Cup_AGP7180_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chiltern_Silver_Plated_Trophy_Cup_AGP7180_1.jpg; sourceTree = "<group>"; };
+		09E53ECF17A1071500B458B8 /* LBYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTube.h; sourceTree = "<group>"; };
+		09E53ED017A1071500B458B8 /* LBYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubeExtractor.h; sourceTree = "<group>"; };
+		09E53ED117A1071500B458B8 /* LBYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubeExtractor.m; sourceTree = "<group>"; };
+		09E53ED217A1071500B458B8 /* LBYouTubePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerViewController.h; sourceTree = "<group>"; };
+		09E53ED317A1071500B458B8 /* LBYouTubePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerViewController.m; sourceTree = "<group>"; };
 		35B74A0416F962D9006435F0 /* Play button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play button.png"; sourceTree = "<group>"; };
 		35B74A2916FA6713006435F0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		35CFF6A816FA6828003B3018 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -284,11 +289,6 @@
 		AFC0EEBF16B6E63800815599 /* PlayBtn-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PlayBtn-568h@2x.png"; path = "Assets/Player/PlayBtn-568h@2x.png"; sourceTree = "<group>"; };
 		AFC0EEC016B6E63800815599 /* PlayBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayBtn.png; path = Assets/Player/PlayBtn.png; sourceTree = "<group>"; };
 		AFC0EEC116B6E63800815599 /* PlayBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PlayBtn@2x.png"; path = "Assets/Player/PlayBtn@2x.png"; sourceTree = "<group>"; };
-		AFC0EECA16B7015A00815599 /* LBYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBYouTube.h; path = YoutubeView/LBYouTube.h; sourceTree = "<group>"; };
-		AFC0EECB16B7015A00815599 /* LBYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBYouTubeExtractor.h; path = YoutubeView/LBYouTubeExtractor.h; sourceTree = "<group>"; };
-		AFC0EECC16B7015A00815599 /* LBYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBYouTubeExtractor.m; path = YoutubeView/LBYouTubeExtractor.m; sourceTree = "<group>"; };
-		AFC0EECD16B7015A00815599 /* LBYouTubePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBYouTubePlayerController.h; path = YoutubeView/LBYouTubePlayerController.h; sourceTree = "<group>"; };
-		AFC0EECE16B7015A00815599 /* LBYouTubePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBYouTubePlayerController.m; path = YoutubeView/LBYouTubePlayerController.m; sourceTree = "<group>"; };
 		AFC0EED116B7017000815599 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		AFD72ED916C73272004C6863 /* DCScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScoreViewController.h; path = Score/DCScoreViewController.h; sourceTree = "<group>"; };
 		AFD72EDA16C73272004C6863 /* DCScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScoreViewController.m; path = Score/DCScoreViewController.m; sourceTree = "<group>"; };
@@ -686,11 +686,11 @@
 		AFC0EEC916B7012E00815599 /* YoutubeView */ = {
 			isa = PBXGroup;
 			children = (
-				AFC0EECA16B7015A00815599 /* LBYouTube.h */,
-				AFC0EECB16B7015A00815599 /* LBYouTubeExtractor.h */,
-				AFC0EECC16B7015A00815599 /* LBYouTubeExtractor.m */,
-				AFC0EECD16B7015A00815599 /* LBYouTubePlayerController.h */,
-				AFC0EECE16B7015A00815599 /* LBYouTubePlayerController.m */,
+				09E53ECF17A1071500B458B8 /* LBYouTube.h */,
+				09E53ED017A1071500B458B8 /* LBYouTubeExtractor.h */,
+				09E53ED117A1071500B458B8 /* LBYouTubeExtractor.m */,
+				09E53ED217A1071500B458B8 /* LBYouTubePlayerViewController.h */,
+				09E53ED317A1071500B458B8 /* LBYouTubePlayerViewController.m */,
 			);
 			name = YoutubeView;
 			sourceTree = "<group>";
@@ -896,8 +896,6 @@
 			files = (
 				AF58FD6F16AF0CA000BA0692 /* main.m in Sources */,
 				AF58FDAE16AF0E8900BA0692 /* DCPlayerViewController.m in Sources */,
-				AFC0EED316B7037900815599 /* LBYouTubeExtractor.m in Sources */,
-				AFC0EED416B7037B00815599 /* LBYouTubePlayerController.m in Sources */,
 				AF92BF0A16B043C200B787F3 /* DCConstants.m in Sources */,
 				AF92BF1116B0465000B787F3 /* DCViewController.m in Sources */,
 				AF92BF1016B0454A00B787F3 /* DCAppDelegate.m in Sources */,
@@ -909,6 +907,8 @@
 				AF2CB2D816C6A77D0059BF26 /* NSData+MPBase64.m in Sources */,
 				AF2CB2D916C6A77D0059BF26 /* Mixpanel.m in Sources */,
 				AFD72EDC16C73272004C6863 /* DCScoreViewController.m in Sources */,
+				09E53ED417A1071500B458B8 /* LBYouTubeExtractor.m in Sources */,
+				09E53ED617A1071500B458B8 /* LBYouTubePlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,8 +919,8 @@
 				AF58FD9716AF0CA000BA0692 /* DumbCharadeTests.m in Sources */,
 				AF92BF0316B0435B00B787F3 /* DCViewController.m in Sources */,
 				AF92BF0F16B0453A00B787F3 /* DCPlayerViewController.m in Sources */,
-				AFC0EECF16B7015A00815599 /* LBYouTubeExtractor.m in Sources */,
-				AFC0EED016B7015A00815599 /* LBYouTubePlayerController.m in Sources */,
+				09E53ED517A1071500B458B8 /* LBYouTubeExtractor.m in Sources */,
+				09E53ED717A1071500B458B8 /* LBYouTubePlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

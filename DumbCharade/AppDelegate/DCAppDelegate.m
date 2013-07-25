@@ -82,39 +82,39 @@
 
 -(void)downloadVideosAndSaveInDocuments
 {
-    PFQuery *query = [PFQuery queryWithClassName:@"Video"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray* videoObjectArray, NSError *error) {
-        if (!error) {
-            NSArray *theDataArray = [[NSArray alloc] initWithArray:videoObjectArray];
-            NSLog(@"theDataArray is%@", theDataArray);
-
-            for (id object in theDataArray)
-            {
-                LBYouTubeExtractor *extractor = [[LBYouTubeExtractor alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:(@"%@%@"),YOUTUBE_URL, [object objectForKey:@"VideoURL"]]] quality:LBYouTubeVideoQualityLarge];
-                NSString *pathToDocs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-                
-                NSString *filename = [NSString stringWithFormat:(@"%@.mp4"), [object objectForKey:@"VideoURL"]];
-                NSString *m_pPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:filename];
-                if (![[NSFileManager defaultManager] fileExistsAtPath:m_pPath])
-                {
-                    
-                    [extractor extractVideoURLWithCompletionBlock:^(NSMutableData *videoURL, NSError *error) {
-                        if(!error) {
-                            NSLog(@"Did extract video URL using completion block: %@", videoURL);
-                            
-                            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                                [videoURL writeToFile:[pathToDocs stringByAppendingPathComponent:filename] atomically:YES];
-                                NSLog(@"File %@ successfully saved", filename);
-                            });
-                        } else {
-                            NSLog(@"Failed extracting video URL using block due to error:%@", error);
-                        }
-                    }];
-                }
-            }
-
-        }
-    }];
+//    PFQuery *query = [PFQuery queryWithClassName:@"Video"];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray* videoObjectArray, NSError *error) {
+//        if (!error) {
+//            NSArray *theDataArray = [[NSArray alloc] initWithArray:videoObjectArray];
+//            NSLog(@"theDataArray is%@", theDataArray);
+//
+//            for (id object in theDataArray)
+//            {
+//                LBYouTubeExtractor *extractor = [[LBYouTubeExtractor alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:(@"%@%@"),YOUTUBE_URL, [object objectForKey:@"VideoURL"]]] quality:LBYouTubeVideoQualityLarge];
+//                NSString *pathToDocs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//                
+//                NSString *filename = [NSString stringWithFormat:(@"%@.mp4"), [object objectForKey:@"VideoURL"]];
+//                NSString *m_pPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:filename];
+//                if (![[NSFileManager defaultManager] fileExistsAtPath:m_pPath])
+//                {
+//                    
+//                    [extractor extractVideoURLWithCompletionBlock:^(NSMutableData *videoURL, NSError *error) {
+//                        if(!error) {
+//                            NSLog(@"Did extract video URL using completion block: %@", videoURL);
+//                            
+//                            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//                                [videoURL writeToFile:[pathToDocs stringByAppendingPathComponent:filename] atomically:YES];
+//                                NSLog(@"File %@ successfully saved", filename);
+//                            });
+//                        } else {
+//                            NSLog(@"Failed extracting video URL using block due to error:%@", error);
+//                        }
+//                    }];
+//                }
+//            }
+//
+//        }
+//    }];
 }
 
 

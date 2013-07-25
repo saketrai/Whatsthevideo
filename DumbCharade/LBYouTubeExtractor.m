@@ -107,7 +107,7 @@ static NSString *UnescapeString(NSString *string) {
 -(NSURL*)extractYouTubeURLFromFile:(NSString *)html error:(NSError *__autoreleasing *)error {
     NSString* JSONStart = nil;
     NSString *JSONStartFull = @"bootstrap_data = \")]}'";
-    
+   
     NSString* JSONStartShrunk = [JSONStartFull stringByReplacingOccurrencesOfString:@" " withString:@""];
     if ([html rangeOfString:JSONStartFull].location != NSNotFound) {
         JSONStart = JSONStartFull;
@@ -127,7 +127,7 @@ static NSString *UnescapeString(NSString *string) {
         JSON = UnescapeString(JSON);
         NSError* decodingError = nil;
         NSDictionary* JSONCode = [NSJSONSerialization JSONObjectWithData:[JSON dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&decodingError];
-        
+
         if (decodingError) {
             *error = decodingError;
         }
@@ -168,7 +168,7 @@ static NSString *UnescapeString(NSString *string) {
     if (self.delegate) {
         [self.delegate youTubeExtractor:self didSuccessfullyExtractYouTubeURL:videoURL];
     }
-    
+
     if(self.completionBlock) {
         self.completionBlock(videoURL, nil);
     }
@@ -178,7 +178,7 @@ static NSString *UnescapeString(NSString *string) {
     if (self.delegate) {
         [self.delegate youTubeExtractor:self failedExtractingYouTubeURLWithError:error];
     }
-    
+
     if(self.completionBlock) {
         self.completionBlock(nil, error);
     }
@@ -206,7 +206,7 @@ static NSString *UnescapeString(NSString *string) {
 -(void)connectionDidFinishLoading:(NSURLConnection *) connection {
     NSString* html = [[NSString alloc] initWithData:self.buffer encoding:NSUTF8StringEncoding];
     [self closeConnection];
-    
+
     if (html.length <= 0) {
         [self failedExtractingYouTubeURLWithError:[NSError errorWithDomain:kLBYouTubePlayerExtractorErrorDomain code:1 userInfo:[NSDictionary dictionaryWithObject:@"Couldn't download the HTML source code. URL might be invalid." forKey:NSLocalizedDescriptionKey]]];
         return;

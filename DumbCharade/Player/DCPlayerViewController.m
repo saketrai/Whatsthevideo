@@ -271,7 +271,7 @@
                                 
                                 [self.spinner startAnimating];
                                 
-                                self.m_pVideoPlayercontroller = [[LBYouTubePlayerController alloc] initWithYouTubeURL:[NSURL URLWithString:theVideoURL] quality:LBYouTubeVideoQualitySmall];
+                                self.m_pVideoPlayercontroller = [[LBYouTubePlayerViewController alloc] initWithYouTubeURL:[NSURL URLWithString:theVideoURL] quality:LBYouTubeVideoQualitySmall];
                             //}
                             self.m_pVideoPlayercontroller.delegate = self;
                             self.m_pVideoPlayercontroller.view.frame = CGRectMake(15.0f, 107.0f, 291.0f, 177.0f);
@@ -797,8 +797,8 @@ if (!([self.dictAns count] == 0))
 {
 if(self.counter == self.totalQuestions+1)
 {
-    [self.m_pVideoPlayercontroller pause];
-    [self.m_pVideoPlayercontroller stop];
+    //[self.m_pVideoPlayercontroller pause];
+    //[self.m_pVideoPlayercontroller stop];
     DCScoreViewController *theScoreViewController = [[DCScoreViewController alloc] initWithNibName:@"DCScoreViewController" bundle:nil];
     //theScoreViewController.mScore = SCORE_MULTIPLIER*mCorrectAnswers;
     [self.navigationController pushViewController:theScoreViewController animated:YES];
@@ -981,8 +981,8 @@ if (self.m_pVideoPlayercontroller)
    
     if(mSelectedQuestionIndex == NUMBER_OF_QUESTIONS-1)
     {
-        [self.m_pVideoPlayercontroller pause];
-        [self.m_pVideoPlayercontroller stop];
+        //[self.m_pVideoPlayercontroller pause];
+        //[self.m_pVideoPlayercontroller stop];
         DCScoreViewController *theScoreViewController = [[DCScoreViewController alloc] initWithNibName:@"DCScoreViewController" bundle:nil];
         //theScoreViewController.mScore = SCORE_MULTIPLIER*mCorrectAnswers;
         [self.navigationController pushViewController:theScoreViewController animated:YES];
@@ -1046,13 +1046,13 @@ if (self.m_pVideoPlayercontroller)
 
 #pragma mark - LBYouTubePlayerViewControllerDelegate
 
--(void)youTubePlayerViewController:(LBYouTubePlayerController *)controller didSuccessfullyExtractYouTubeURL:(NSURL *)videoURL {
+-(void)youTubePlayerViewController:(LBYouTubePlayerViewController *)controller didSuccessfullyExtractYouTubeURL:(NSURL *)videoURL {
     DLog(@"Did extract video source:%@", videoURL);
     [self.spinner stopAnimating];
 
 }
 
--(void)youTubePlayerViewController:(LBYouTubePlayerController *)controller failedExtractingYouTubeURLWithError:(NSError *)error {
+-(void)youTubePlayerViewController:(LBYouTubePlayerViewController *)controller failedExtractingYouTubeURLWithError:(NSError *)error {
     DLog(@"Failed loading video due to error:%@", error);
 }
 
